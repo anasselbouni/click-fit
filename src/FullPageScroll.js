@@ -4,6 +4,7 @@ import bg from './img/image-2.jpeg';
 import sv from './img/Group 1.svg';
 import bg1 from './img/image-3.jpg';
 import trainer from './img/trainer-image.jpg';
+import FetchData from './Components/FetchData';
 
 const FullPageScroll = () => {
     const SectionStyle = {
@@ -17,8 +18,6 @@ const FullPageScroll = () => {
 
     const joinus = useRef(null);
     const training = useRef(null);
-    const events = useRef(null);
-    const aboutus = useRef(null);
 
     const scrollToSection = (elementRef) => {
         window.scrollTo({
@@ -36,9 +35,7 @@ const FullPageScroll = () => {
 
                 <ul className="nav-links">
                     <li onClick={() => scrollToSection(joinus)}>JOIN US</li>
-                    <li onClick={() => scrollToSection(training)}>Training</li>
-                    <li onClick={() => scrollToSection(events)}>EVENTS</li>
-                    <li onClick={() => scrollToSection(aboutus)}>ABOUT US</li>
+                    <li onClick={() => scrollToSection(training)}>TRAINING</li>
                 </ul>
             </div>
         </nav>
@@ -57,25 +54,19 @@ const FullPageScroll = () => {
                         </tr>
                     </table>
                 </FullpageSection>
-                <FullpageSection style={{...SectionStyle, backgroundImage:`url(${bg1})`}}>
-                    <h1 ref={training}>Screen 2</h1>
-                </FullpageSection>
-                <FullpageSection style={{...SectionStyle, backgroundImage:`url(${bg1})`}}>
-                    <h1 ref={events}>Screen 3</h1>
-                </FullpageSection>
-                <FullpageSection className style={{...SectionStyle, backgroundImage:`url(${trainer})`}}>
-                    <div className="trainer-overlay" onclick="off()">
+                <FullpageSection style={{...SectionStyle, backgroundImage:`url(${trainer})`}}>
+                    <div ref={training} className="trainer-overlay" onclick="off()">
 
                     <div class="trainer_container">
                         <div class="trainer_cta">
-                            <h2 class="trainer_headline">TAKE YOUR TRAINING TO THE NEXT LEVEL</h2>
-                            <p class="trainer_wrapper trainer_body">CrossFit courses and certifications are open to individuals and trainers seeking to improve their health and fitness through effective training and nutritional strategies.</p>
+                            <h2 class="trainer_headline">Headline</h2>
+                            <FetchData />
                             <div class="trainer_buttons">
                                 <a class="trainer_button primary small trainer_button_1" href="/level-1">
-                                    Become a Trainer
+                                    Button 1
                                 </a>
                                 <a class="trainer_button primary small trainer_button_1" href="https://www.crossfit.com/online-courses">
-                                    Expand Your Knowledge
+                                    Button 2
                                 </a>
                             </div>
                         </div>
