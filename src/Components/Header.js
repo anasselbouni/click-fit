@@ -9,10 +9,10 @@ function Header() {
             </div>
 
             <ul className="nav-links">
-              <li><a href="">JOIN US</a></li>
-              <li><a href="">Training</a></li>
-              <li><a href="">EVENTS</a></li>
-              <li><a href="">ABOUT US</a></li>
+              <li>JOIN US</li>
+              <li>Training</li>
+              <li>EVENTS</li>
+              <li>ABOUT US</li>
             </ul>
           </div>
         </nav>
