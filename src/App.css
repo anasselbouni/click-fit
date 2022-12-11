@@ -1,0 +1,80 @@
+.hero-logo {
+  color: white;
+  font-size: 28vh;
+  vertical-align: text-top;
+  font-weight: 700;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  transition: all 0.4s ease;
+  background-color: #00000047;
+  z-index: 9999;
+}
+nav.sticky {
+  padding: 15px 20px;
+  background: #fecd03;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #fff;
+}
+nav.sticky .logo a {
+  color: #fff;
+}
+
+.nav-content .nav-links {
+  display: flex;
+}
+
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3 ease;
+}
+
+.nav-links li a:hover {
+  color: #fecd03;
+}
+
+.nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4 ease;
+}
+
+.nav.sticky .nav-links li a:hover {
+  color: #0e2431;
+}
+
+
+.hero-button {
+  margin-left: 50vh;
+  background-color: black;
+  width: 35vh;
+  height: 9vh;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+}
