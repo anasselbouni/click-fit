@@ -3,7 +3,7 @@ import Fullpage, { FullPageSections,FullpageSection, FullpageNavigation } from '
 import bg from './img/image-2.jpeg';
 import sv from './img/Group 1.svg';
 import bg1 from './img/image-3.jpg';
-import bg2 from './img/image-1.jpg';
+import trainer from './img/trainer-image.jpg';
 
 const FullPageScroll = () => {
     const SectionStyle = {
@@ -60,11 +60,27 @@ const FullPageScroll = () => {
                 <FullpageSection style={{...SectionStyle, backgroundImage:`url(${bg1})`}}>
                     <h1 ref={training}>Screen 2</h1>
                 </FullpageSection>
-                <FullpageSection style={{...SectionStyle, backgroundImage:`url(${bg2})`}}>
+                <FullpageSection style={{...SectionStyle, backgroundImage:`url(${bg1})`}}>
                     <h1 ref={events}>Screen 3</h1>
                 </FullpageSection>
-                <FullpageSection style={{...SectionStyle, backgroundImage:`url(${bg2})`}}>
-                    <h1 ref={aboutus}>Screen 3</h1>
+                <FullpageSection className style={{...SectionStyle, backgroundImage:`url(${trainer})`}}>
+                    <div className="trainer-overlay" onclick="off()">
+
+                    <div class="trainer_container">
+                        <div class="trainer_cta">
+                            <h2 class="trainer_headline">TAKE YOUR TRAINING TO THE NEXT LEVEL</h2>
+                            <p class="trainer_wrapper trainer_body">CrossFit courses and certifications are open to individuals and trainers seeking to improve their health and fitness through effective training and nutritional strategies.</p>
+                            <div class="trainer_buttons">
+                                <a class="trainer_button primary small trainer_button_1" href="/level-1">
+                                    Become a Trainer
+                                </a>
+                                <a class="trainer_button primary small trainer_button_1" href="https://www.crossfit.com/online-courses">
+                                    Expand Your Knowledge
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </FullpageSection>
             </FullPageSections>
         </Fullpage>

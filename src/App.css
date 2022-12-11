@@ -28,14 +28,6 @@ nav .nav-content {
   align-items: center;
   justify-content: space-between;
 }
-nav .logo a {
-  font-weight: 500;
-  font-size: 35px;
-  color: #fff;
-}
-nav.sticky .logo a {
-  color: #fff;
-}
 
 .nav-content .nav-links {
   display: flex;
@@ -44,37 +36,123 @@ nav.sticky .logo a {
 .nav-content .nav-links li {
   list-style: none;
   margin: 0 8px;
-}
-
-.nav-links li a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   padding: 10px 4px;
   transition: all 0.3 ease;
+  cursor: default;
 }
 
-.nav-links li a:hover {
+
+.nav-links li:hover {
   color: #fecd03;
 }
 
-.nav.sticky .nav-links li a {
+.nav.sticky .nav-links li {
   color: #fff;
   transition: all 0.4 ease;
 }
 
-.nav.sticky .nav-links li a:hover {
+.nav.sticky .nav-links li:hover {
   color: #0e2431;
 }
 
 
 .hero-button {
   margin-left: 50vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.42);
   width: 35vh;
   height: 9vh;
   color: white;
   text-align: center;
   font-weight: 900;
+  border-radius: 10vh;
+}
+
+.hero-button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.trainer-overlay {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.trainer_container {
+  margin: 0 auto;
+  z-index: 2;    
+  padding: 20vh;
+}
+
+.trainer_cta {  
+  align-items: center;
+  z-index: 2;
+}
+
+.trainer_cta h2 {
+  font-size: 8vh;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.trainer_cta p {
+  font-size: 4vh;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.trainer_buttons {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.trainer_buttons .trainer_button_1 {
+  margin-right: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.trainer_button.small {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 24px 10px;
+  letter-spacing: .03em;
+}
+
+.trainer_button.primary {
+  color: #fff;
+  background-color: #c68b0785;
+}
+
+.trainer_button:hover {
+  color: #fff;
+  background-color: #c68b07;
+}
+
+.trainer_button {
+  font-family: ingra-condensed,sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  transition: background-color .25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
 }
